@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:"Kdam Thmor Pro", sans-serif; 
+}
+
+li:hover {
+    color: brown;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+
+
+.fotos-container {
+    width: auto;
+    height: 400px;
+    justify-content: center;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.fotos {    
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10 10 20px 10px;
+    
+  
+ 
+
+}
+
+.fotos:hover {
+    transform: scale(1.02);
+}
+
+#foto-1 {
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxDodZx9Wccvu7pqkfgY9CCVoKMPWf3U62h1J0dN5t3qnWbb-hp5SbN_YLjGzL_TEbOG6-MkqqRB4RvWDNNEKxL95xviTcQzHBLmTLgY6WOxdbqwztjgEYGPZgoTBR3teIBcdX3seLUENi/s1600/MV5BNTcxMjQxOTQwNV5BMl5BanBnXkFtZTcwOTAxNjUwNA%2540%2540._V1_SY1000_CR0%252C0%252C1518%252C1000_AL_.jpg');
+   
+}
+
+#foto-2 {
+    background-image: url('https://curtamais.com.br/goiania/wp-content/uploads/sites/2/2024/04/hermione-divulgacao.jpg');
+    
+}
+
+#foto-3 {
+    background-image: url('https://rollingstone.uol.com.br/media/uploads/harry_potter_e_o_prisioneiro_de_azkaban_foto_reproducao_twitter.jpg');
+    
+}
+
+#foto-4 {
+    background-image: url('http://cinemascope.com.br/wp-content/uploads/2012/08/199219.jpg');
+
+}
+
+#foto-5 { 
+    background-image: url('https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/06/14/501375627-i901681.jpeg');
+
+}
+
+#foto-6 {
+    background-image: url('https://cinemaeargumento.com/wp-content/uploads/2012/11/colazkaban.jpg');
+
+}
+
+
+#foto-7 {
+    background-image: url('https://pbs.twimg.com/media/DQzh4_iWsAU4AaQ.jpg');
+
+}
+
+#foto-8 {
+    background-image: url('https://pm1.aminoapps.com/6880/e06603f3ffd6b7cb34e53e1e05cf8d499e50de04r1-542-581v2_uhq.jpg');
+
+}
+
+#foto-9 {
+    background-image: url('https://cinemascope.com.br/wp-content/uploads/2012/08/Sibila-Trelawney_HP3.png');
+
+}
+
+footer {
+    height: 300px;
+    margin-top: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family:"Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(max-width:768px) {
+    .footer-navigation{
+        display: block;
+    }
+    
+    nav { 
+        display: none;
+    }
+    .content {
+        width: 95%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .fotos-container {
+        width: 95%;
+        height: 95%;
+       
+    }
+   
+    }
